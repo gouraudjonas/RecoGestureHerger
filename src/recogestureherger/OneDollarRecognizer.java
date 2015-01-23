@@ -559,7 +559,7 @@ public class OneDollarRecognizer {
     }
 
     public double DistanceAtBestAngle(ArrayList<Point> points, Template T,
-            double a, double b, double threshold) {
+        double a, double b, double threshold) {
         double x1 = Phi * a + (1.0 - Phi) * b;
         double f1 = DistanceAtAngle(points, T, x1);
         double x2 = (1.0 - Phi) * a + Phi * b;

@@ -13,7 +13,7 @@ public class HergerUI extends JPanel {
     private ArrayList<Point> path;
     private OneDollarRecognizer myRecognizer;
  
-    public HergerUI(){
+    public HergerUI(String adress, int x, int y, int with, int height){
        super();
        initComponent();
        path = new ArrayList<>();
@@ -68,7 +68,7 @@ public class HergerUI extends JPanel {
             @Override
             public void run() {
                 JFrame frame = new JFrame();
-                HergerUI linedraw= new HergerUI();
+                HergerUI linedraw= new HergerUI("", 0 , 0,0,0);
                 frame.add(linedraw);
                 frame.setSize(500,500);
                 frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
